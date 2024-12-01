@@ -19,3 +19,8 @@ deactivate
 ```sh
 ruff check . --fix && ruff format .
 ```
+
+## 3. 認証リクエスト
+```sh
+curl -X GET "http://127.0.0.1:8000/sample/authorize/?response_type=code&scope=openid%20profile%20email&client_id=client_a&state=af0ifjsldkj&redirect_uri=http://127.0.0.1:8000/sample/&nonce=n-OS6_WzA2Mj"
+```

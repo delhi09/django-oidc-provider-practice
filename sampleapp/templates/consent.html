@@ -1,0 +1,6 @@
+<div>同意しますか？</div>
+<form method="POST" action="{% url 'sampleapp:consent' authorization_token %}">
+  {% csrf_token %}
+  <input type="checkbox" name="consented">
+  <input type="submit" value="同意">
+</form>
